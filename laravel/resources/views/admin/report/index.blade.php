@@ -28,7 +28,7 @@
           <div id='mainContent'>
             <div class="container-fluid">
               <div class="container" id="box">
-                    <img src="/images/new.png" style="width:250px;height:50px;">
+                    <img src="../images/new.png" style="width:250px;height:50px;">
                 <div>
                     <br><br><h4 align="right"><b>SURAT PESANAN RUMAH SEMENTARA</b></h4>
                     <h4 align="right">No. SPRS-0506/15-18/SPR-VillaBali A.06</h4>
