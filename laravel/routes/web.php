@@ -3,6 +3,11 @@
 Route::get('/logout', '\App\Http\Controllers\Auth\LoginController@logout');
 Auth::routes();
 
+Route::get('/clear-cache', function() {
+    $exitCode = Artisan::call('cache:clear');
+    return view ('/admin');
+});
+
 Route::group(['prefix' => ADMIN, 'as' => ADMIN . '.', 'middleware'=>['auth']], function() {
     Route::get('/', 'DashboardController@index')->name('dash');
     Route::resource('/users', 'UserController');
