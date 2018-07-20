@@ -5,7 +5,7 @@ Auth::routes();
 
 Route::get('/clear-cache', function() {
     $exitCode = Artisan::call('cache:clear');
-    return view ('/admin');
+    return view ('/');
 });
 
 Route::group(['prefix' => ADMIN, 'as' => ADMIN . '.', 'middleware'=>['auth']], function() {
