@@ -588,7 +588,7 @@ if (! function_exists('mix')) {
             return new HtmlString("//localhost:8080{$path}");
         }
 
-        $manifestPath = public_path($manifestDirectory.'../mix-manifest.json');
+        $manifestPath = public_path($manifestDirectory.'/../mix-manifest.json');
 
         if (! isset($manifests[$manifestPath])) {
             if (! file_exists($manifestPath)) {
